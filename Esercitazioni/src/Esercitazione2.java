@@ -22,6 +22,7 @@ public class Esercitazione2 {
 		driver.findElement(By.cssSelector("[placeholder=\"Last Name\"]")).sendKeys("Colaprico");
 		driver.findElement(By.cssSelector("[placeholder=\"Mobile Number\"]")).sendKeys("325626526");
 			
+		//Inserisci email
 		
 		driver.findElement(By.cssSelector("[placeholder=\"Email\"]")).sendKeys("ciao@ciao.it");
 		
