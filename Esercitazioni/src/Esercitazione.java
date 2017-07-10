@@ -19,7 +19,6 @@ public class Esercitazione {
 
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		
-		
 		driver.get("http://www.phptravels.net/");
 		driver.manage().window().maximize();
 		// clicca sul pulsante "Flights"

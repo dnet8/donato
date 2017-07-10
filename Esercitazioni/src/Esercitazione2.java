@@ -10,8 +10,10 @@ public class Esercitazione2 {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dcolaprico\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
+		//Crea la variabile password
 		String password = new String("ciaociao");
 		
+		// Va sul sito e si registra
 		driver.get("http://www.phptravels.net/");
 		driver.manage().window().maximize();
 		
@@ -21,8 +23,6 @@ public class Esercitazione2 {
 		driver.findElement(By.cssSelector("[placeholder=\"First Name\"]")).sendKeys("Donato");
 		driver.findElement(By.cssSelector("[placeholder=\"Last Name\"]")).sendKeys("Colaprico");
 		driver.findElement(By.cssSelector("[placeholder=\"Mobile Number\"]")).sendKeys("325626526");
-			
-	
 		
 		driver.findElement(By.cssSelector("[placeholder=\"Email\"]")).sendKeys("ciao@ciao.it");
 		
@@ -30,7 +30,6 @@ public class Esercitazione2 {
 		driver.findElement(By.cssSelector("[placeholder=\"Confirm Password\"]")).sendKeys(password);
 		driver.findElements(By.cssSelector("[type=\"submit\"]")).get(0).click();
 		
-	
 	}
 
 }

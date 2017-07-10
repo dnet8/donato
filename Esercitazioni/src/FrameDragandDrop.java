@@ -10,21 +10,16 @@ public class FrameDragandDrop {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dcolaprico\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://jqueryui.com/resources/demos/droppable/default.html");
 		driver.manage().window().maximize();
 		
-		
 		WebElement source=driver.findElement(By.cssSelector("[id=\"draggable\"]"));
 		WebElement target=driver.findElement(By.cssSelector("[id=\"droppable\"]"));
 
-		
 		Actions a = new Actions(driver);
-		
-		
 		
 		//fa andare il frame in diagonale e poi lo fa salire per entrare nel quadrato del drop 
 		for (int i=1; i<=160; i++)
