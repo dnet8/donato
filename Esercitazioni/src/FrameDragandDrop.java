@@ -17,6 +17,7 @@ public class FrameDragandDrop {
 		driver.get("http://jqueryui.com/resources/demos/droppable/default.html");
 		driver.manage().window().maximize();
 		
+		
 		WebElement source=driver.findElement(By.cssSelector("[id=\"draggable\"]"));
 		WebElement target=driver.findElement(By.cssSelector("[id=\"droppable\"]"));
 
