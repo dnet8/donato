@@ -46,7 +46,7 @@ public class Esercitazione2 {
 		System.out.println("Dopo aver immesso una email sbagliata");
 		//Ricontrolla se il messaggio di errore c'è
 		System.out.println(driver.findElement(By.cssSelector("[class=\"alert alert-danger\"]")).isDisplayed());*/
-		
+	
 	}
 
 }
