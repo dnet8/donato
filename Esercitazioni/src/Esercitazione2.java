@@ -1,6 +1,12 @@
+import java.util.Iterator;
+import java.util.Set;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Esercitazione2 {
 
@@ -29,7 +35,23 @@ public class Esercitazione2 {
 		driver.findElement(By.cssSelector("[placeholder=\"Password\"]")).sendKeys(password);
 		driver.findElement(By.cssSelector("[placeholder=\"Confirm Password\"]")).sendKeys(password);
 		driver.findElements(By.cssSelector("[type=\"submit\"]")).get(0).click();
+			
 		
+		// Questa parte è per il workflow del controllo della password errata, con phptravles però non funziona correttamente
+		/*System.out.println("Prima di immettere una email sbagliata");
+		//Controlla se il messaggio di errore c'è
+		System.out.println(driver.findElement(By.cssSelector("[class=\"alert alert-danger\"]")).isDisplayed());
+		
+		//Immetti una email non valida
+		driver.findElement(By.cssSelector("[placeholder=\"Email\"]")).sendKeys("ciao@it");
+		
+		driver.findElement(By.cssSelector("[placeholder=\"Password\"]")).sendKeys(password);
+		driver.findElement(By.cssSelector("[placeholder=\"Confirm Password\"]")).sendKeys(password);
+		driver.findElements(By.cssSelector("[type=\"submit\"]")).get(0).click();
+		
+		System.out.println("Dopo aver immesso una email sbagliata");
+		//Ricontrolla se il messaggio di errore c'è
+		System.out.println(driver.findElement(By.cssSelector("[class=\"alert alert-danger\"]")).isDisplayed());*/
 	}
 
 }
