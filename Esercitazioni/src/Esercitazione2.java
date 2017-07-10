@@ -1,4 +1,3 @@
-package src;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,9 +31,9 @@ public class Esercitazione2 {
 		driver.findElements(By.cssSelector("[type=\"submit\"]")).get(0).click();
 			
 		
-		// Questa parte è per il workflow del controllo della password errata, con phptravels però non funziona correttamente
+		// Questa parte Ã¨ per il workflow del controllo della password errata, con phptravels perÃ² non funziona correttamente
 		/*System.out.println("Prima di immettere una email sbagliata");
-		//Controlla se il messaggio di errore c'è
+		//Controlla se il messaggio di errore c'Ã¨
 		System.out.println(driver.findElement(By.cssSelector("[class=\"alert alert-danger\"]")).isDisplayed());
 		
 		//Immetti una email non valida
@@ -45,7 +44,7 @@ public class Esercitazione2 {
 		driver.findElements(By.cssSelector("[type=\"submit\"]")).get(0).click();
 		
 		System.out.println("Dopo aver immesso una email sbagliata");
-		//Ricontrolla se il messaggio di errore c'è
+		//Ricontrolla se il messaggio di errore c'Ã¨
 		System.out.println(driver.findElement(By.cssSelector("[class=\"alert alert-danger\"]")).isDisplayed());*/
 		
 	}
